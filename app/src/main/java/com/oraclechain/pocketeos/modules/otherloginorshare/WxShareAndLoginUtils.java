@@ -55,10 +55,11 @@ public class WxShareAndLoginUtils {
         if (!iwxapi.isWXAppInstalled()) {
             Toast.makeText(context, R.string.install_weixin, Toast.LENGTH_SHORT).show();
             return false;
-        } else if (!iwxapi.isWXAppSupportAPI()) {
-            Toast.makeText(context, R.string.updata_weixin, Toast.LENGTH_SHORT).show();
-            return false;
         }
+//        else if (!iwxapi.isWXAppSupportAPI()) {
+//            Toast.makeText(context, R.string.updata_weixin, Toast.LENGTH_SHORT).show();
+//            return false;
+//        }
         return true;
     }
 
